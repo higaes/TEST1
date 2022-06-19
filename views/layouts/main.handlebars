@@ -8,20 +8,37 @@
   <title>restaurant</title>
 
   {{!-- link css files here --}}
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" /> {{!-- 必要
+  --}}
   <link rel="stylesheet" href="/stylesheets/bootstrap.css">
+  {{!-- 一定要放public資料夾 --}}
+  <link rel="stylesheet" href="/main.css" />
+
 </head>
 
 <body>
-  <nav class="navbar-light bg-dark">
-    <a href="#" class="navbar-brand">Navbar</a>
+  <header>
+    <!-- navigation -->
+    <nav class="navbar navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="/">
+          <img src="https://assets-lighthouse.s3.amazonaws.com/uploads/image/file/6227/restaurant-list-logo.png"
+            width="30" height="30" class="d-inline-block align-top" alt="我的餐廳清單">
+          我的餐廳清單
+        </a>
+      </div>
+    </nav>
 
-  </nav>
+    <div class="banner"></div>
+  </header>
   {{{ body }}}
   {{!-- 會把局部樣板的內容都放這 --}}
   {{!-- 例如分頁 --}}
   {{!-- include javascript files here --}}
   <script src="/javascripts/popper.js"> </script>
   <script src="/javascripts/bootstrap.js"> </script>
+  <script src="https://kit.fontawesome.com/40e4596c38.js" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
