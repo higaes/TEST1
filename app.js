@@ -55,7 +55,7 @@ app.get('/search', (req, res) => {
     }
   })
   console.log('req.query', req.query)
-  res.render('index', { dining: diningFilter })  //render 至index.handlebars
+  res.render('index', { dining: diningFilter,keyword:keyword })  //render 至index.handlebars
 })
 
 app.listen(port, () => {
